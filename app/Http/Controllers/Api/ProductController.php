@@ -17,7 +17,7 @@ class ProductController extends Controller
             ->with([
                 'category:id,name,slug',
                 'seller:id,name',
-                'images:product_id,url,is_primary,position',
+                'images:product_id,url,video_url,duration,is_primary,position',
                 'variants:product_id,size,color,price,stock',
             ])
             ->where('status', 'active');
@@ -69,7 +69,7 @@ class ProductController extends Controller
         $product->loadMissing([
             'category:id,name,slug',
             'seller:id,name',
-            'images:product_id,url,is_primary,position',
+            'images:product_id,url,video_url,duration,is_primary,position',
             'variants:product_id,size,color,price,stock,attributes',
             'reviews' => fn ($query) => $query->with('user:id,name'),
         ]);

@@ -33,6 +33,8 @@ class ProductResource extends JsonResource
             ]),
             'images' => $this->whenLoaded('images', fn () => $this->images->map(fn ($image) => [
                 'url' => $image->url,
+                'video_url' => $image->video_url,
+                'duration' => $image->duration ? (int) $image->duration : null,
                 'is_primary' => (bool) $image->is_primary,
                 'position' => (int) $image->position,
             ])),

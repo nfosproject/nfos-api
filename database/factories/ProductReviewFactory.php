@@ -19,12 +19,12 @@ class ProductReviewFactory extends Factory
         return [
             'product_id' => Product::factory(),
             'user_id' => User::factory(),
-            'rating' => fake()->numberBetween(3, 5),
-            'title' => fake()->sentence(6),
-            'body' => fake()->paragraphs(2, true),
+            'rating' => $this->faker->numberBetween(3, 5),
+            'title' => $this->faker->sentence(6),
+            'body' => $this->faker->paragraphs(2, true),
             'attributes' => [
-                'fit' => fake()->randomElement(['Runs small', 'True to size', 'Runs large']),
-                'quality' => fake()->randomElement(['Excellent', 'Good', 'Premium']),
+                'fit' => $this->faker->randomElement(['Runs small', 'True to size', 'Runs large']),
+                'quality' => $this->faker->randomElement(['Excellent', 'Good', 'Premium']),
             ],
         ];
     }

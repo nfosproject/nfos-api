@@ -20,7 +20,7 @@ class ProductController extends Controller
             ->with([
                 'seller:id,name,email',
                 'category:id,name',
-                'images:product_id,url,is_primary,position',
+                'images:product_id,url,video_url,duration,is_primary,position',
             ]);
 
         if ($search = $request->string('search')->toString()) {
@@ -73,7 +73,7 @@ class ProductController extends Controller
         $product->load([
             'seller:id,name,email',
             'category:id,name',
-            'images:product_id,url,is_primary,position',
+            'images:product_id,url,video_url,duration,is_primary,position',
         ]);
 
         return response()->json([
@@ -90,7 +90,7 @@ class ProductController extends Controller
         $product->refresh()->load([
             'seller:id,name,email',
             'category:id,name',
-            'images:product_id,url,is_primary,position',
+            'images:product_id,url,video_url,duration,is_primary,position',
         ]);
 
         return response()->json([
@@ -228,7 +228,13 @@ class ProductController extends Controller
                 'name' => $product->category?->name ?? 'Uncategorised',
             ],
             'images' => $product->images
-                ? $product->images->map(static fn ($image) => $image->url)->filter()->values()
+                ? $product->images->map(static fn ($image) => [
+                    'url' => $image->url,
+                    'video_url' => $image->video_url,
+                    'duration' => $image->duration ? (int) $image->duration : null,
+                    'is_primary' => (bool) $image->is_primary,
+                    'position' => (int) $image->position,
+                ])->filter(fn ($img) => $img['url'] || $img['video_url'])->values()
                 : [],
             'primary_image' => $primaryImage?->url,
             'rating' => $metadata['average_rating'] ?? null,

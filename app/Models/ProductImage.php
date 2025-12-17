@@ -17,6 +17,8 @@ class ProductImage extends Model
     protected $fillable = [
         'product_id',
         'url',
+        'video_url',
+        'duration',
         'is_primary',
         'position',
     ];

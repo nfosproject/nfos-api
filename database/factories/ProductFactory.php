@@ -17,25 +17,25 @@ class ProductFactory extends Factory
 
     public function definition(): array
     {
-        $title = fake()->unique()->sentence(3);
-        $slug = Str::slug($title . '-' . fake()->unique()->numberBetween(100, 999));
+        $title = $this->faker->unique()->sentence(3);
+        $slug = Str::slug($title . '-' . $this->faker->unique()->numberBetween(100, 999));
 
         return [
             'user_id' => User::factory(),
             'category_id' => Category::factory(),
             'title' => $title,
             'slug' => $slug,
-            'sku' => strtoupper(Str::random(3)) . '-' . fake()->unique()->numberBetween(10000, 99999),
-            'description' => fake()->paragraphs(3, true),
-            'price' => fake()->numberBetween(1800, 25000),
-            'compare_at_price' => fake()->boolean(40) ? fake()->numberBetween(2000, 30000) : null,
-            'stock' => fake()->numberBetween(10, 150),
+            'sku' => strtoupper(Str::random(3)) . '-' . $this->faker->unique()->numberBetween(10000, 99999),
+            'description' => $this->faker->paragraphs(3, true),
+            'price' => $this->faker->numberBetween(1800, 25000),
+            'compare_at_price' => $this->faker->boolean(40) ? $this->faker->numberBetween(2000, 30000) : null,
+            'stock' => $this->faker->numberBetween(10, 150),
             'status' => 'active',
             'metadata' => [
-                'material' => fake()->randomElement(['Cotton', 'Silk', 'Denim', 'Leather', 'Linen', 'Polyester Blend']),
-                'care' => fake()->randomElement(['Dry clean', 'Machine wash cold', 'Hand wash only']),
+                'material' => $this->faker->randomElement(['Cotton', 'Silk', 'Denim', 'Leather', 'Linen', 'Polyester Blend']),
+                'care' => $this->faker->randomElement(['Dry clean', 'Machine wash cold', 'Hand wash only']),
             ],
-            'published_at' => now()->subDays(fake()->numberBetween(0, 120)),
+            'published_at' => now()->subDays($this->faker->numberBetween(0, 120)),
         ];
     }
 }

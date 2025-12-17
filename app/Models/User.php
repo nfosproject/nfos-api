@@ -123,6 +123,11 @@ class User extends Authenticatable
         return $this->hasMany(PayoutTransaction::class, 'seller_id');
     }
 
+    public function reviews()
+    {
+        return $this->hasMany(ProductReview::class);
+    }
+
     /**
      * Generate a unique referral code for the user
      */

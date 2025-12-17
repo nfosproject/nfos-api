@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Api\AuthController;
+use App\Http\Controllers\Api\Auth\OtpController;
 use App\Http\Controllers\Api\Admin\DashboardController as AdminDashboardController;
 use App\Http\Controllers\Api\Admin\NotificationController as AdminNotificationController;
 use App\Http\Controllers\Api\Admin\OrderController as AdminOrderController;
@@ -18,13 +19,22 @@ use App\Http\Controllers\Api\Seller\OrderController as SellerOrderController;
 use App\Http\Controllers\Api\Payment\EsewaPaymentController;
 use App\Http\Controllers\Api\PayoutController;
 use App\Http\Controllers\Api\Admin\PayoutController as AdminPayoutController;
+use App\Http\Controllers\Api\Admin\BannerController as AdminBannerController;
+use App\Http\Controllers\Api\BannerController;
+use App\Http\Controllers\Api\ReviewController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/health', fn () => response()->json(['ok' => true]));
 
 Route::prefix('auth')->group(function () {
+    Route::post('/otp/send', [OtpController::class, 'send']);
+    Route::post('/otp/verify', [OtpController::class, 'verify']);
     Route::post('/register', [AuthController::class, 'register']);
     Route::post('/login', [AuthController::class, 'login']);
+    
+    // Google OAuth
+    Route::get('/google/redirect', [\App\Http\Controllers\Api\Auth\GoogleAuthController::class, 'redirect']);
+    Route::get('/google/callback', [\App\Http\Controllers\Api\Auth\GoogleAuthController::class, 'callback']);
 
     Route::middleware('auth:sanctum')->group(function () {
         Route::get('/me', [AuthController::class, 'me']);
@@ -37,6 +47,9 @@ Route::get('/categories/{category}', [CategoryController::class, 'show']);
 
 Route::get('/products', [ProductController::class, 'index']);
 Route::get('/products/{product}', [ProductController::class, 'show']);
+Route::get('/products/{product}/reviews', [ReviewController::class, 'productReviews']);
+
+Route::get('/banners', [BannerController::class, 'index']);
 
 Route::middleware('auth:sanctum')->group(function () {
     Route::get('/coupons', [CouponController::class, 'index']);
@@ -77,6 +90,13 @@ Route::middleware('auth:sanctum')->group(function () {
     Route::get('/payouts/history', [PayoutController::class, 'history']);
     Route::get('/payouts/earnings', [PayoutController::class, 'earnings']);
     Route::post('/payouts/update-info', [PayoutController::class, 'updatePayoutInfo']);
+
+    // Review routes
+    Route::get('/reviews', [ReviewController::class, 'index']);
+    Route::get('/reviews/{review}', [ReviewController::class, 'show']);
+    Route::post('/reviews', [ReviewController::class, 'store']);
+    Route::patch('/reviews/{review}', [ReviewController::class, 'update']);
+    Route::delete('/reviews/{review}', [ReviewController::class, 'destroy']);
 });
 
 Route::post('/payments/esewa/callback', [EsewaPaymentController::class, 'callback']);
@@ -87,7 +107,7 @@ Route::middleware('auth:sanctum')->prefix('seller')->group(function () {
     Route::patch('/orders/{order}', [SellerOrderController::class, 'update']);
 });
 
-Route::prefix('admin')->group(function () {
+Route::middleware(['auth:sanctum', 'admin'])->prefix('admin')->group(function () {
     Route::get('/overview', [AdminDashboardController::class, 'overview']);
 
     Route::get('/products', [AdminProductController::class, 'index']);
@@ -123,4 +143,10 @@ Route::prefix('admin')->group(function () {
     Route::get('/payouts/batches/{batch}/export', [AdminPayoutController::class, 'exportBatch']);
     Route::post('/payouts/trigger/{sellerId}', [AdminPayoutController::class, 'triggerManualPayout']);
     Route::get('/payouts/statistics', [AdminPayoutController::class, 'statistics']);
+
+    Route::get('/banners', [AdminBannerController::class, 'index']);
+    Route::post('/banners', [AdminBannerController::class, 'store']);
+    Route::match(['put', 'patch'], '/banners/{banner}', [AdminBannerController::class, 'update']);
+    Route::delete('/banners/{banner}', [AdminBannerController::class, 'destroy']);
+    Route::post('/banners/reorder', [AdminBannerController::class, 'reorder']);
 });

@@ -21,14 +21,14 @@ class ProductVariantFactory extends Factory
 
         return [
             'product_id' => Product::factory(),
-            'sku' => strtoupper(Str::random(4)) . fake()->unique()->numberBetween(1000, 9999),
-            'title' => fake()->randomElement(['Standard fit', 'Slim fit', 'Relaxed fit', 'Tall fit']),
-            'size' => fake()->randomElement($sizes),
-            'color' => fake()->randomElement($colors),
-            'price' => fake()->numberBetween(1800, 26000),
-            'stock' => fake()->numberBetween(5, 120),
+            'sku' => strtoupper(Str::random(4)) . $this->faker->unique()->numberBetween(1000, 9999),
+            'title' => $this->faker->randomElement(['Standard fit', 'Slim fit', 'Relaxed fit', 'Tall fit']),
+            'size' => $this->faker->randomElement($sizes),
+            'color' => $this->faker->randomElement($colors),
+            'price' => $this->faker->numberBetween(1800, 26000),
+            'stock' => $this->faker->numberBetween(5, 120),
             'attributes' => [
-                'material' => fake()->randomElement(['Organic cotton', 'Merino wool', 'Cashmere blend', 'Recycled polyester']),
+                'material' => $this->faker->randomElement(['Organic cotton', 'Merino wool', 'Cashmere blend', 'Recycled polyester']),
             ],
         ];
     }

@@ -19,6 +19,7 @@ class Category extends Model
         'slug',
         'parent_id',
         'display_order',
+        'image_url',
     ];
 
     public function parent()

@@ -138,74 +138,87 @@ class ProductSeeder extends Seeder
 
             $imageLibrary = [
                 'women' => [
-                    'https://images.unsplash.com/photo-1503341455253-b2e723bb3dbb',
-                    'https://images.unsplash.com/photo-1524504388940-b1c1722653e1',
-                    'https://images.unsplash.com/photo-1521572163474-6864f9cf17ab',
-                    'https://images.unsplash.com/photo-1500530855697-b586d89ba3ee',
-                    'https://images.unsplash.com/photo-1521571753145-434c7c1cb17d',
+                    'https://image.uniqlo.com/UQ/ST3/us/imagesgoods/478719/item/usgoods_58_478719_3x4.jpg?width=300',
+                    'https://image.uniqlo.com/UQ/ST3/us/imagesgoods/478730/item/usgoods_31_478730_3x4.jpg?width=300',
+                    'https://image.uniqlo.com/UQ/ST3/us/imagesgoods/479616/sub/usgoods_479616_sub7_3x4.jpg',
+                    'https://image.uniqlo.com/UQ/ST3/us/imagesgoods/480490/item/usgoods_08_480490_3x4.jpg',
+                    'https://image.uniqlo.com/UQ/ST3/WesternCommon/imagesgoods/480490/sub/goods_480490_sub14_3x4.jpg',
+                    'https://image.uniqlo.com/UQ/ST3/us/imagesgoods/480832/item/usgoods_67_480832_3x4.jpg',
+                    'https://image.uniqlo.com/UQ/ST3/us/imagesgoods/480832/sub/usgoods_480832_sub7_3x4.jpg'
                 ],
                 'men' => [
-                    'https://images.unsplash.com/photo-1514756331096-242fdeb70d4a',
-                    'https://images.unsplash.com/photo-1475180098004-ca77a66827be',
-                    'https://images.unsplash.com/photo-1542291026-7eec264c27ff',
-                    'https://images.unsplash.com/photo-1516826439464-dad55b04f38c',
-                    'https://images.unsplash.com/photo-1489980557514-251d61e3eeb6',
+                    'https://image.uniqlo.com/UQ/ST3/us/imagesgoods/480832/sub/usgoods_480832_sub7_3x4.jpg'
                 ],
                 'footwear' => [
-                    'https://images.unsplash.com/photo-1542293787938-4d2226c6c665',
-                    'https://images.unsplash.com/photo-1485965120184-e220f721d03e',
-                    'https://images.unsplash.com/photo-1595341888016-a392ef81b7de',
-                    'https://images.unsplash.com/photo-1491553895911-0055eca6402d',
-                    'https://images.unsplash.com/photo-1504593811423-6dd665756598',
+                    'https://image.uniqlo.com/UQ/ST3/WesternCommon/imagesgoods/478322/item/goods_01_478322_3x4.jpg?width=300',
+                    'https://cdn.salla.sa/gXmRK/H0t0sJZopuiOsQtqp4euPrdkBZvTg4r21135F720.jpg',
+                    'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-08DCmLf9IaodSnrNQQ_7lgfU2eVmsCCx7jUEKxHi0QNSwqe-_tS1dEJeF2IuVJC_Z-Y&usqp=CAU',
+                    'https://thumblr.uniid.it/product/407153/0849c57ccba4.jpg?width=3840&format=webp&q=75',
+                    'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSl82wF8z4eOJqtyWsFUD-C43fdF2EJNnMGUZGzyl78jnRxkmz97GW-hVEzZp0q6VJmyOs&usqp=CAU',
+                    'https://images.puma.com/image/upload/f_auto,q_auto,w_600,b_rgb:FAFAFA/global/406203/03/sv01/fnd/ZAF/fmt/png'
                 ],
                 'outerwear' => [
-                    'https://images.unsplash.com/photo-1517677129300-07b130802f46',
-                    'https://images.unsplash.com/photo-1457972729786-0411a3b2b626',
-                    'https://images.unsplash.com/photo-1512436991641-6745cdb1723f',
-                    'https://images.unsplash.com/photo-1542365882-3a4b0d81c02a',
-                    'https://images.unsplash.com/photo-1467043153537-a4f86fcd9892',
+                    'https://image.uniqlo.com/UQ/ST3/us/imagesgoods/478719/item/usgoods_58_478719_3x4.jpg?width=300',
+                    'https://image.uniqlo.com/UQ/ST3/us/imagesgoods/478730/item/usgoods_31_478730_3x4.jpg?width=300',
+                    'https://image.uniqlo.com/UQ/ST3/us/imagesgoods/479616/sub/usgoods_479616_sub7_3x4.jpg',
+                    'https://image.uniqlo.com/UQ/ST3/us/imagesgoods/480490/item/usgoods_08_480490_3x4.jpg',
+                    'https://image.uniqlo.com/UQ/ST3/WesternCommon/imagesgoods/480490/sub/goods_480490_sub14_3x4.jpg',
+                    'https://image.uniqlo.com/UQ/ST3/us/imagesgoods/480832/item/usgoods_67_480832_3x4.jpg',
+                    'https://image.uniqlo.com/UQ/ST3/us/imagesgoods/480832/sub/usgoods_480832_sub7_3x4.jpg'
                 ],
                 'tops' => [
-                    'https://images.unsplash.com/photo-1520430098645-7aaad2233f23',
-                    'https://images.unsplash.com/photo-1521572163474-6864f9cf17ab',
-                    'https://images.unsplash.com/photo-1512436991641-6745cdb1723f',
-                    'https://images.unsplash.com/photo-1487412720507-e7ab37603c6f',
-                    'https://images.unsplash.com/photo-1514996937319-344454492b37',
+                    'https://image.uniqlo.com/UQ/ST3/us/imagesgoods/478719/item/usgoods_58_478719_3x4.jpg?width=300',
+                    'https://image.uniqlo.com/UQ/ST3/us/imagesgoods/478730/item/usgoods_31_478730_3x4.jpg?width=300',
+                    'https://image.uniqlo.com/UQ/ST3/us/imagesgoods/479616/sub/usgoods_479616_sub7_3x4.jpg',
+                    'https://image.uniqlo.com/UQ/ST3/us/imagesgoods/480490/item/usgoods_08_480490_3x4.jpg',
+                    'https://image.uniqlo.com/UQ/ST3/WesternCommon/imagesgoods/480490/sub/goods_480490_sub14_3x4.jpg',
+                    'https://image.uniqlo.com/UQ/ST3/us/imagesgoods/480832/item/usgoods_67_480832_3x4.jpg',
+                    'https://image.uniqlo.com/UQ/ST3/us/imagesgoods/480832/sub/usgoods_480832_sub7_3x4.jpg'
                 ],
                 'pants' => [
-                    'https://images.unsplash.com/photo-1562157873-818bc0726f5d',
-                    'https://images.unsplash.com/photo-1491579143381-7e33c0d91730',
-                    'https://images.unsplash.com/photo-1514996937319-344454492b37',
-                    'https://images.unsplash.com/photo-1503341455253-b2e723bb3dbb',
-                    'https://images.unsplash.com/photo-1507680467858-3f83f0c2d4c9',
+                    'https://image.uniqlo.com/UQ/ST3/us/imagesgoods/478719/item/usgoods_58_478719_3x4.jpg?width=300',
+                    'https://image.uniqlo.com/UQ/ST3/us/imagesgoods/478730/item/usgoods_31_478730_3x4.jpg?width=300',
+                    'https://image.uniqlo.com/UQ/ST3/us/imagesgoods/479616/sub/usgoods_479616_sub7_3x4.jpg',
+                    'https://image.uniqlo.com/UQ/ST3/us/imagesgoods/480490/item/usgoods_08_480490_3x4.jpg',
+                    'https://image.uniqlo.com/UQ/ST3/WesternCommon/imagesgoods/480490/sub/goods_480490_sub14_3x4.jpg',
+                    'https://image.uniqlo.com/UQ/ST3/us/imagesgoods/480832/item/usgoods_67_480832_3x4.jpg',
+                    'https://image.uniqlo.com/UQ/ST3/us/imagesgoods/480832/sub/usgoods_480832_sub7_3x4.jpg'
                 ],
                 'bags' => [
-                    'https://images.unsplash.com/photo-1517638851339-4aa32003c11a',
-                    'https://images.unsplash.com/photo-1523381210434-271e8be1f52b',
-                    'https://images.unsplash.com/photo-1519211975560-4ca611f5a72a',
-                    'https://images.unsplash.com/photo-1518544801976-3e159e02393c',
-                    'https://images.unsplash.com/photo-1542291026-7eec264c27ff',
+                    'https://image.uniqlo.com/UQ/ST3/us/imagesgoods/478719/item/usgoods_58_478719_3x4.jpg?width=300',
+                    'https://image.uniqlo.com/UQ/ST3/us/imagesgoods/478730/item/usgoods_31_478730_3x4.jpg?width=300',
+                    'https://image.uniqlo.com/UQ/ST3/us/imagesgoods/479616/sub/usgoods_479616_sub7_3x4.jpg',
+                    'https://image.uniqlo.com/UQ/ST3/us/imagesgoods/480490/item/usgoods_08_480490_3x4.jpg',
+                    'https://image.uniqlo.com/UQ/ST3/WesternCommon/imagesgoods/480490/sub/goods_480490_sub14_3x4.jpg',
+                    'https://image.uniqlo.com/UQ/ST3/us/imagesgoods/480832/item/usgoods_67_480832_3x4.jpg',
+                    'https://image.uniqlo.com/UQ/ST3/us/imagesgoods/480832/sub/usgoods_480832_sub7_3x4.jpg'
                 ],
                 'accessories' => [
-                    'https://images.unsplash.com/photo-1521572163474-6864f9cf17ab',
-                    'https://images.unsplash.com/photo-1535639818669-9b0f06e8182d',
-                    'https://images.unsplash.com/photo-1518552987719-40ed8d3fb7c7',
-                    'https://images.unsplash.com/photo-1512427691650-1e5b2a9de0c5',
-                    'https://images.unsplash.com/photo-1522312346375-d1a52e2b99b3',
+                    'https://image.uniqlo.com/UQ/ST3/us/imagesgoods/478719/item/usgoods_58_478719_3x4.jpg?width=300',
+                    'https://image.uniqlo.com/UQ/ST3/us/imagesgoods/478730/item/usgoods_31_478730_3x4.jpg?width=300',
+                    'https://image.uniqlo.com/UQ/ST3/us/imagesgoods/479616/sub/usgoods_479616_sub7_3x4.jpg',
+                    'https://image.uniqlo.com/UQ/ST3/us/imagesgoods/480490/item/usgoods_08_480490_3x4.jpg',
+                    'https://image.uniqlo.com/UQ/ST3/WesternCommon/imagesgoods/480490/sub/goods_480490_sub14_3x4.jpg',
+                    'https://image.uniqlo.com/UQ/ST3/us/imagesgoods/480832/item/usgoods_67_480832_3x4.jpg',
+                    'https://image.uniqlo.com/UQ/ST3/us/imagesgoods/480832/sub/usgoods_480832_sub7_3x4.jpg'
                 ],
                 'activewear' => [
-                    'https://images.unsplash.com/photo-1518640467707-6811f4a6ab73',
-                    'https://images.unsplash.com/photo-1533049022226-2adc498789c7',
-                    'https://images.unsplash.com/photo-1531094079268-4cbf83f50184',
-                    'https://images.unsplash.com/photo-1534367610401-9f75f7b74937',
-                    'https://images.unsplash.com/photo-1517832207067-4db24a2ae47c',
+                    'https://image.uniqlo.com/UQ/ST3/us/imagesgoods/478719/item/usgoods_58_478719_3x4.jpg?width=300',
+                    'https://image.uniqlo.com/UQ/ST3/us/imagesgoods/478730/item/usgoods_31_478730_3x4.jpg?width=300',
+                    'https://image.uniqlo.com/UQ/ST3/us/imagesgoods/479616/sub/usgoods_479616_sub7_3x4.jpg',
+                    'https://image.uniqlo.com/UQ/ST3/us/imagesgoods/480490/item/usgoods_08_480490_3x4.jpg',
+                    'https://image.uniqlo.com/UQ/ST3/WesternCommon/imagesgoods/480490/sub/goods_480490_sub14_3x4.jpg',
+                    'https://image.uniqlo.com/UQ/ST3/us/imagesgoods/480832/item/usgoods_67_480832_3x4.jpg',
+                    'https://image.uniqlo.com/UQ/ST3/us/imagesgoods/480832/sub/usgoods_480832_sub7_3x4.jpg'
                 ],
                 'jewellery' => [
-                    'https://images.unsplash.com/photo-1523292562811-8fa7962a78c8',
-                    'https://images.unsplash.com/photo-1522312346375-d1a52e2b99b3',
-                    'https://images.unsplash.com/photo-1458530970867-aaa3700c4921',
-                    'https://images.unsplash.com/photo-1516632664305-eda5bbfdd279',
-                    'https://images.unsplash.com/photo-1524504388940-b1c1722653e1',
+                    'https://image.uniqlo.com/UQ/ST3/us/imagesgoods/478719/item/usgoods_58_478719_3x4.jpg?width=300',
+                    'https://image.uniqlo.com/UQ/ST3/us/imagesgoods/478730/item/usgoods_31_478730_3x4.jpg?width=300',
+                    'https://image.uniqlo.com/UQ/ST3/us/imagesgoods/479616/sub/usgoods_479616_sub7_3x4.jpg',
+                    'https://image.uniqlo.com/UQ/ST3/us/imagesgoods/480490/item/usgoods_08_480490_3x4.jpg',
+                    'https://image.uniqlo.com/UQ/ST3/WesternCommon/imagesgoods/480490/sub/goods_480490_sub14_3x4.jpg',
+                    'https://image.uniqlo.com/UQ/ST3/us/imagesgoods/480832/item/usgoods_67_480832_3x4.jpg',
+                    'https://image.uniqlo.com/UQ/ST3/us/imagesgoods/480832/sub/usgoods_480832_sub7_3x4.jpg'
                 ],
             ];
 
@@ -214,6 +227,30 @@ class ProductSeeder extends Seeder
 
             $existingProductCount = Product::count();
             $totalProducts = max(0, 100 - $existingProductCount);
+
+            if ($totalProducts === 0) {
+                $this->command->info('Products already seeded. Skipping...');
+                return;
+            }
+
+            $this->command->info("Seeding {$totalProducts} products...");
+
+            // Pre-generate all product data
+            $productsData = [];
+            $imagesData = [];
+            $variantsData = [];
+            $reviewsData = [];
+            $usedSlugs = Product::pluck('slug')->toArray();
+            $usedSkus = Product::pluck('sku')->toArray();
+            $usedVariantSkus = ProductVariant::pluck('sku')->toArray();
+
+            $reviewTitles = [
+                'Staple in my wardrobe',
+                'Exceptional quality',
+                'Perfect fit and finish',
+                'Exactly what I needed',
+                'Elevated everyday piece',
+            ];
 
             for ($i = 0; $i < $totalProducts; $i++) {
                 $categoryKey = $categories->keys()->random();
@@ -230,27 +267,48 @@ class ProductSeeder extends Seeder
                     Arr::random($definition['keywords'])
                 );
 
-                $product = Product::factory()
-                    ->for($seller, 'seller')
-                    ->for($category)
-                    ->state(function () use ($title, $categoryKey, $materials) {
-                        $price = fake()->numberBetween(1800, 26000);
+                // Generate unique slug
+                $baseSlug = Str::slug($title);
+                $slug = $baseSlug;
+                $counter = 1;
+                while (in_array($slug, $usedSlugs)) {
+                    $slug = $baseSlug . '-' . $counter;
+                    $counter++;
+                }
+                $usedSlugs[] = $slug;
 
-                        return [
+                        $price = fake()->numberBetween(1800, 26000);
+                $productId = (string) Str::uuid();
+
+                // Generate unique SKU
+                do {
+                    $sku = strtoupper(Str::random(3)) . '-' . fake()->numberBetween(10000, 99999);
+                } while (in_array($sku, $usedSkus));
+                $usedSkus[] = $sku;
+
+                $productsData[] = [
+                    'id' => $productId,
+                    'user_id' => $seller->id,
+                    'category_id' => $category->id,
                             'title' => $title,
-                            'slug' => Str::slug($title . '-' . fake()->unique()->numberBetween(1000, 9999)),
+                    'slug' => $slug,
+                    'sku' => $sku,
+                    'description' => fake()->paragraphs(3, true),
                             'price' => $price,
                             'compare_at_price' => fake()->boolean(45) ? $price + fake()->numberBetween(200, 3200) : null,
-                            'metadata' => [
+                    'stock' => fake()->numberBetween(10, 150),
+                    'status' => 'active',
+                    'metadata' => json_encode([
                                 'material' => Arr::random($materials),
                                 'care' => fake()->randomElement(['Dry clean', 'Gentle machine wash', 'Hand wash cold']),
                                 'collection' => Str::title($categoryKey) . ' Capsule',
-                            ],
+                    ]),
                             'published_at' => now()->subDays(fake()->numberBetween(0, 90)),
+                    'created_at' => now(),
+                    'updated_at' => now(),
                         ];
-                    })
-                    ->create();
 
+                // Prepare images data
                 $images = collect($categoryImages)
                     ->reject(fn ($url) => $url === $primaryImage)
                     ->shuffle()
@@ -259,55 +317,229 @@ class ProductSeeder extends Seeder
                     ->values();
 
                 foreach ($images as $position => $url) {
-                    ProductImage::create([
-                        'product_id' => $product->id,
+                    $imagesData[] = [
+                        'id' => (string) Str::uuid(),
+                        'product_id' => $productId,
                         'url' => $url . '?auto=format&fit=crop&w=1200&q=80',
+                        'video_url' => $position === 0 ? 'https://videos.pexels.com/video-files/7681932/pexels-photo-7681932-1920x1080-30fps.mp4' : null,
+                        'duration' => $position === 0 ? 30 : null,
                         'is_primary' => $position === 0,
                         'position' => $position,
-                    ]);
+                        'created_at' => now(),
+                        'updated_at' => now(),
+                    ];
                 }
 
-                // Variants
+                // Prepare variants data
                 $sizeOptions = $definition['sizes'];
                 $variantCount = min(count($sizeOptions), fake()->numberBetween(2, 4));
                 $variantSizes = Arr::wrap(Arr::random($sizeOptions, $variantCount));
 
                 foreach ($variantSizes as $size) {
-                    ProductVariant::factory()
-                        ->for($product)
-                        ->state(function () use ($product, $size, $colors) {
-                            $basePrice = $product->price;
+                    $basePrice = $price;
                             $adjustment = fake()->boolean(30) ? fake()->numberBetween(-200, 600) : 0;
 
-                            return [
+                    // Generate unique variant SKU
+                    do {
+                        $variantSku = strtoupper(Str::random(4)) . fake()->numberBetween(1000, 9999);
+                    } while (in_array($variantSku, $usedVariantSkus));
+                    $usedVariantSkus[] = $variantSku;
+
+                    $variantsData[] = [
+                        'id' => (string) Str::uuid(),
+                        'product_id' => $productId,
+                        'sku' => $variantSku,
+                        'title' => fake()->randomElement(['Standard fit', 'Slim fit', 'Relaxed fit', 'Tall fit']),
                                 'size' => $size,
                                 'color' => Arr::random($colors),
                                 'price' => max(1500, $basePrice + $adjustment),
                                 'stock' => fake()->numberBetween(10, 120),
-                            ];
-                        })
-                        ->create();
+                        'attributes' => json_encode([
+                            'material' => Arr::random($materials),
+                        ]),
+                        'created_at' => now(),
+                        'updated_at' => now(),
+                    ];
                 }
 
-                // Reviews
-                $reviewers = $customers->random(fake()->numberBetween(2, 4));
+                // Prepare reviews data
+                $reviewCount = fake()->numberBetween(2, 4);
+                $reviewers = $customers->random($reviewCount);
+
                 foreach ($reviewers as $customer) {
-                    ProductReview::factory()
-                        ->for($product)
-                        ->for($customer, 'user')
-                        ->state([
+                    $reviewsData[] = [
+                        'id' => (string) Str::uuid(),
+                        'product_id' => $productId,
+                        'user_id' => $customer->id,
                             'rating' => fake()->numberBetween(3, 5),
-                            'title' => Arr::random([
-                                'Staple in my wardrobe',
-                                'Exceptional quality',
-                                'Perfect fit and finish',
-                                'Exactly what I needed',
-                                'Elevated everyday piece',
-                            ]),
-                        ])
-                        ->create();
+                        'title' => Arr::random($reviewTitles),
+                        'body' => fake()->paragraphs(2, true),
+                        'attributes' => json_encode([
+                            'fit' => fake()->randomElement(['Runs small', 'True to size', 'Runs large']),
+                            'quality' => fake()->randomElement(['Excellent', 'Good', 'Premium']),
+                        ]),
+                        'created_at' => now(),
+                        'updated_at' => now(),
+                    ];
                 }
             }
+
+            // Bulk insert products
+            $this->command->info('Inserting products...');
+            foreach (array_chunk($productsData, 50) as $chunk) {
+                Product::insert($chunk);
+            }
+
+            // Bulk insert images
+            $this->command->info('Inserting product images...');
+            foreach (array_chunk($imagesData, 100) as $chunk) {
+                ProductImage::insert($chunk);
+            }
+
+            // Bulk insert variants
+            $this->command->info('Inserting product variants...');
+            foreach (array_chunk($variantsData, 100) as $chunk) {
+                ProductVariant::insert($chunk);
+            }
+
+            // Bulk insert reviews
+            $this->command->info('Inserting product reviews...');
+            foreach (array_chunk($reviewsData, 100) as $chunk) {
+                ProductReview::insert($chunk);
+            }
+
+            // Add specific product: Pile Lined Fleece Relaxed Cardigan
+            $this->command->info('Adding Pile Lined Fleece Relaxed Cardigan...');
+            $this->addSpecificProduct($sellers, $categories, $customers);
+
+            $this->command->info("Successfully seeded {$totalProducts} products with images, variants, and reviews!");
         });
+    }
+
+    private function addSpecificProduct($sellers, $categories, $customers): void
+    {
+        // Check if product already exists
+        $existingProduct = Product::where('slug', 'pile-lined-fleece-relaxed-cardigan')->first();
+        if ($existingProduct) {
+            $this->command->info('Pile Lined Fleece Relaxed Cardigan already exists. Skipping...');
+            return;
+        }
+
+        $outerwearCategory = $categories['outerwear']['model'] ?? null;
+        if (!$outerwearCategory) {
+            $this->command->warn('Outerwear category not found. Skipping specific product...');
+            return;
+        }
+
+        $seller = $sellers->random();
+        $productId = (string) Str::uuid();
+        $price = 4500; // Set a reasonable price
+        $compareAtPrice = 5500; // Original price
+
+        // Generate unique SKU
+        do {
+            $sku = 'CARD-' . fake()->numberBetween(10000, 99999);
+        } while (Product::where('sku', $sku)->exists());
+
+        // Create product
+        $product = Product::create([
+            'id' => $productId,
+            'user_id' => $seller->id,
+            'category_id' => $outerwearCategory->id,
+            'title' => 'Pile Lined Fleece Relaxed Cardigan',
+            'slug' => 'pile-lined-fleece-relaxed-cardigan',
+            'sku' => $sku,
+            'description' => 'A cozy and comfortable relaxed cardigan featuring a soft pile-lined interior for extra warmth. Perfect for layering during cooler months. Made with quality materials for lasting comfort and style.',
+            'price' => $price,
+            'compare_at_price' => $compareAtPrice,
+            'stock' => fake()->numberBetween(20, 80),
+            'status' => 'active',
+            'metadata' => json_encode([
+                'material' => 'Fleece blend',
+                'care' => 'Machine wash cold, tumble dry low',
+                'collection' => 'Outerwear Capsule',
+            ]),
+            'published_at' => now()->subDays(fake()->numberBetween(0, 30)),
+        ]);
+
+        // Add product images
+        $productImages = [
+            [
+                'id' => (string) Str::uuid(),
+                'product_id' => $productId,
+                'url' => 'https://image.uniqlo.com/UQ/ST3/us/imagesgoods/479616/item/usgoods_02_479616_3x4.jpg?width=400',
+                'video_url' => 'https://videos.pexels.com/video-files/7681932/pexels-photo-7681932-1920x1080-30fps.mp4',
+                'duration' => 30,
+                'is_primary' => true,
+                'position' => 0,
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+            [
+                'id' => (string) Str::uuid(),
+                'product_id' => $productId,
+                'url' => 'https://image.uniqlo.com/UQ/ST3/us/imagesgoods/479616/sub/usgoods_479616_sub7_3x4.jpg?width=400',
+                'video_url' => null,
+                'duration' => null,
+                'is_primary' => false,
+                'position' => 1,
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+        ];
+
+        ProductImage::insert($productImages);
+
+        // Add product variants (sizes)
+        $sizes = ['S', 'M', 'L', 'XL'];
+        $variants = [];
+        foreach ($sizes as $index => $size) {
+            do {
+                $variantSku = $sku . '-' . $size;
+            } while (ProductVariant::where('sku', $variantSku)->exists());
+
+            $variants[] = [
+                'id' => (string) Str::uuid(),
+                'product_id' => $productId,
+                'sku' => $variantSku,
+                'title' => 'Size ' . $size,
+                'size' => $size,
+                'price' => $price,
+                'stock' => fake()->numberBetween(5, 20),
+                'attributes' => json_encode(['size' => $size]),
+                'created_at' => now(),
+                'updated_at' => now(),
+            ];
+        }
+
+        ProductVariant::insert($variants);
+
+        // Add some reviews
+        $reviewCount = fake()->numberBetween(2, 4);
+        $reviewers = $customers->random(min($reviewCount, $customers->count()));
+        $reviews = [];
+
+        foreach ($reviewers as $customer) {
+            $reviews[] = [
+                'id' => (string) Str::uuid(),
+                'product_id' => $productId,
+                'user_id' => $customer->id,
+                'rating' => fake()->numberBetween(4, 5),
+                'title' => Arr::random(['Very comfortable', 'Great quality', 'Perfect fit', 'Love this cardigan']),
+                'body' => fake()->paragraphs(2, true),
+                'attributes' => json_encode([
+                    'fit' => fake()->randomElement(['Runs small', 'True to size', 'Runs large']),
+                    'quality' => 'Excellent',
+                ]),
+                'created_at' => now(),
+                'updated_at' => now(),
+            ];
+        }
+
+        if (!empty($reviews)) {
+            ProductReview::insert($reviews);
+        }
+
+        $this->command->info('Successfully added Pile Lined Fleece Relaxed Cardigan!');
     }
 }

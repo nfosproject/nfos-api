@@ -26,13 +26,13 @@ class ProductImageFactory extends Factory
             'https://images.unsplash.com/photo-1490481651871-ab68de25d43d',
         ];
 
-        $url = fake()->randomElement($baseUrls);
+        $url = $this->faker->randomElement($baseUrls);
 
         return [
             'product_id' => Product::factory(),
             'url' => $url . '?auto=format&fit=crop&w=1200&q=80',
-            'is_primary' => fake()->boolean(30),
-            'position' => fake()->numberBetween(0, 6),
+            'is_primary' => $this->faker->boolean(30),
+            'position' => $this->faker->numberBetween(0, 6),
         ];
     }
 }
