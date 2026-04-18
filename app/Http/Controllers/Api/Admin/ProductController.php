@@ -131,6 +131,10 @@ class ProductController extends Controller
             'sku' => ['sometimes', 'nullable', 'string', 'max:255', Rule::unique('products', 'sku')->ignore($id)],
             'metadata' => ['sometimes', 'nullable', 'array'],
             'published_at' => ['sometimes', 'nullable', 'date'],
+            'collection' => ['sometimes', 'nullable', 'string', 'max:255'],
+            'tags' => ['sometimes', 'nullable', 'array'],
+            'tags.*' => ['string', 'max:255'],
+            'gender' => ['sometimes', 'nullable', 'string', Rule::in(['women', 'men', 'unisex'])],
         ];
 
         $validated = $request->validate($rules);
@@ -146,6 +150,9 @@ class ProductController extends Controller
         $data['status'] = $validated['status'] ?? $product?->status ?? 'draft';
         $data['metadata'] = $validated['metadata'] ?? $product?->metadata;
         $data['published_at'] = $validated['published_at'] ?? $product?->published_at;
+        $data['collection'] = $validated['collection'] ?? $product?->collection;
+        $data['tags'] = $validated['tags'] ?? $product?->tags;
+        $data['gender'] = $validated['gender'] ?? $product?->gender;
 
         $sellerId = $validated['seller_id'] ?? $product?->user_id;
         $categoryId = $validated['category_id'] ?? $product?->category_id;
@@ -240,6 +247,11 @@ class ProductController extends Controller
             'rating' => $metadata['average_rating'] ?? null,
             'stock' => (int) $product->stock,
             'status' => $product->status,
+            'collection' => $product->collection ? [
+                'slug' => $product->collection,
+            ] : null,
+            'tags' => $product->tags ?? [],
+            'gender' => $product->gender,
             'sales' => $metadata['units_sold'] ?? 0,
             'created_at' => optional($product->created_at)?->toIso8601String(),
             'updated_at' => optional($product->updated_at)?->toIso8601String(),

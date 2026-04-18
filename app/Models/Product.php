@@ -27,10 +27,14 @@ class Product extends Model
         'status',
         'metadata',
         'published_at',
+        'collection',
+        'tags',
+        'gender',
     ];
 
     protected $casts = [
         'metadata' => 'array',
+        'tags' => 'array',
         'published_at' => 'datetime',
     ];
 

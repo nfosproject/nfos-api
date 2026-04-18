@@ -26,6 +26,11 @@ class ProductResource extends JsonResource
             'status' => $this->status,
             'metadata' => $this->metadata,
             'published_at' => optional($this->published_at)->toIso8601String(),
+            'collection' => $this->collection ? [
+                'slug' => $this->collection,
+            ] : null,
+            'tags' => $this->tags ?? [],
+            'gender' => $this->gender,
             'category' => new CategoryResource($this->whenLoaded('category')),
             'seller' => $this->whenLoaded('seller', fn () => [
                 'id' => $this->seller->id,
